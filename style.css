@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: deeppink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+.circle-image {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: auto;
+    margin-left: 5%;
+}
+.circle-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Botões de navegação */
+.content {
+    cursor: pointer;
+    margin-right: 3%;
+}
+.content a, li {
+    float: left;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 5px;
+    text-shadow: 1px 1px black;
+}
+.botao:hover {
+    background: linear-gradient(to right, magenta, lightpink);
+}
+.botao1:hover {
+    background: linear-gradient(to right, black, brown);
+}
+.botao2:hover {
+    background: linear-gradient(to right, blue, red);
+}
+.botao3:hover {
+    background: linear-gradient(to right, rgb(299, 0, 0), rgb(255, 141, 0), rgb(255, 238, 0), rgb(2, 129, 33), rgb(0, 76, 255), rgb(119, 0, 136));
+}
+.botao4:hover {
+    background: linear-gradient(to top, lightgrey, gold);
+}
+.botao5:hover {
+    background: linear-gradient(to right, purple, lightpink);
+}
+.botao6:hover {
+    background: linear-gradient(to bottom, rgb(2, 129, 33), rgb(255, 238, 0),  rgb(0, 76, 255));
+}
+
+/* Imagem de fundo */
+#container {
+    background-image: url(img/capa.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* Títulos da capa */
+#titulo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-top: 15%;
+    text-shadow: 1.5px 1.5px black;
+    text-align: center;
+    font-size: 50px;
+}
+#subtitulo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-shadow: 1.5px 1.5px black;
+    text-align: center;
+    font-size: 30px;
+}
+#acao {
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+}
+
+/* Apresentação do ODS */
+#inicio {
+    padding: 20px;
+    float: left;
+    background-color: rgb(255, 244, 246);
+}
+.coluna {
+    float: left;
+    padding: 3% 3%;
+    position: relative;
+    width: 50%;
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    float: left;
+}
+/* Parte das ações sociais */
+section {
+    padding: 20px 0;
+    float: left;
+}
+#borda {
+    padding: 5px;
+    width: 100%;
+}
+hr {
+    border: 1px dashed deeppink;
+}
+h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.icone {
+    width: 90%;
+    border: 3px ridge deeppink;
+    margin: 10px;
+}
+.bloco {
+    padding: 4% 2%;
+    width: 50%;
+}
+#parte1 {
+    display: inline-block;
+}
+
+/* Sobre mim */
+#criador {
+    border-radius: 10% 10%;
+    width: 60%;
+}
+.perfil {
+    float: left;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+    width: 50%;
+}
+/* rodapé com créditos */
+footer {
+    background-color: deeppink;
+    float: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+footer a {
+    color: skyblue;
+    text-decoration: none;
+}
+@media all and (max-width: 768px) {
+    .content {
+        visibility: hidden;
+    }
+    .coluna {
+        display: block;
+        width: 90%;
+        padding: 0;
+        float: none;
+    }
+    .circle-image {
+        position: absolute;
+    }
+    .bloco {
+        display: block;
+        width: 90%;
+        padding: 0;
+        float: none;
+        position: relative;
+    }
+}
